@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PortFolio</title>
+  <link href="./style.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/6a75478fb5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="./images/logo.png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Frontend Developer</p>
+        <h1>Hi! I'm <span>Abhishek</span> <br>Wagh From Mumbai</h1>
+      </div>
+    </div>
+  </div>  
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="./images/cover.png">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About me</h1>
+          <p>
+            Hello! I'm Abhishek Wagh, a passionate and dedicated computer science professional with a strong focus on frontend development . with a solid foundation in computer science principles and a keep eye for design. i am proficient in a range of frontend technologies including HTML, CSS, Javascript. 
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience') ">Experiance</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id = "skills">
+            <ul>
+              <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
+              <li><span>Web Development</span><br>Creating User friendly design and frontend.</li>
+              <li><span>App Development</span><br>Designing Web/App Interfaces</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience" >
+            <ul>
+              <li><span>May 2023 - July 2023 (Intern)</span><br>Coud Computing - Hosting , Networking.</li>
+      <!----       <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
+              <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
+      --></ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2023</span><br>Bachlors in Computer Science - S K Somaiya College - 8.9 CGPA</li>
+              <li><span>2019</span><br>HSC - S K Somaiya Jr. College, </li>
+              <li><span>2017</span><br>SSC - Shivai Balak Mandir</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- -----------------------------Services--------------------------- -->
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Web Design</h2>
+        <p>I understand the importance of responsive design, ensuring that websites look and perform flawlessly across all devices and screen sizes. Whether it's a personal blog, an e-commerce platform, or a corporate website, I tailor my designs to meet the unique needs and objectives of each client.</p>
+        <!-- <a href="#">Learn More</a> -->
+      </div>
+      <div>
+        <i class="fa-solid fa-crop"></i>
+        <h2>UI/UX Design</h2>
+        <p>My approach to UI/UX design is grounded in empathy for the end user. I prioritize user research, wireframing, and prototyping to create seamless, user-centric designs that prioritize usability without compromising on aesthetics.</p>
+        <!-- <a href="#">Learn More</a> -->
+      </div>
+      <div>
+        <i class="fa-brands fa-apple"></i>
+        <h2>App Design</h2>
+        <p>My approach to app design extends beyond the visual interface. I understand the importance of creating a cohesive and memorable brand identity within the app's design, utilizing color schemes, typography, and iconography to reinforce the client's brand message.</p>
+        <!-- <a href="#">Learn More</a> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ------------------------------------Portfolio------------------------------------- -->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="./images/work-1.png">
+        <div class="layer">
+          <h3>College Admission Management System</h3>
+          <p>Website where students can easily fill the admission form of college. Website with User-friendly Features.</p>
+          <a href="https://github.com/abhiwagh2113/CAMS.git" target="_blank"><i class="fa-solid fa-link"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="./images/work-2.png">
+        <div class="layer">
+          <h3>Netflix Sign-Up Clone</h3>
+          <p>I created this Netflix Sign-Up Clone using HTML and CSS.</p>
+          <a href="https://github.com/abhiwagh2113/Netflix-Frontpage-Clone.git" target="_blank"><i class="fa-solid fa-link"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="./images/work-3.png">
+        <div class="layer">
+          <h3>Drum-Kit Website</h3>
+          <p> I Created Drum-kit Website using HTML, CSS and Javascript. User-Friendly Design and Tunes of several instruments.</p>
+          <a href="#" target="_blank"><i class="fa-solid fa-link"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+  </div>
+</div>
+
+<!-- <-----------------------------Contact--------------------------------------> 
+
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>   abhsihekwagh2113@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>   8369233037</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/abhishek.wagh.96558?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://twitter.com/abhi21134?t=360UXx0niUw6k8W1G41JwQ&s=09" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+          <a href="https://instagram.com/abhishek.wagh18?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/abhishek-wagh-6145bb221/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <a href="" download class="btn btn2">Download Resume</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright <i class="fa-regular fa-copyright"></i> 2023 Abhishek. All rights reserved. </p>
+  </div>
+</div>
+
+<script>
+
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for (tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
+<script>
+  var sidemenu= document.getElementById("sidemenu");
+  function openmenu(){
+    sidemenu.style.right="0";
+  }
+  function closemenu(){
+    sidemenu.style.right="-200px";
+  }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwWnJWJd0d0wDylSSlYlGWBlYA9i66lkToaS1026KQz6CaU39aVwoBkTXA-06bUKh43/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg= document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML="Message sent successfully"
+        setTimeout(function(){
+          msg.innerHTML=""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
