@@ -71,6 +71,20 @@ nav ul li a:hover::after{
     color: #b54769;
 }
 
+/* <---------------------------------> */
+.photo{
+    height: 450px;
+    width: 450px;
+    position: relative;
+    left: 750px;
+    bottom: 300px;
+}
+.photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
 /* <-------------------About------------------> */
 
 #about{
@@ -196,6 +210,7 @@ nav ul li a:hover::after{
 }
 .work img{
     width: 100%;
+    height: 350px;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
@@ -324,8 +339,19 @@ nav .fa-solid{
     display: none;
 }
 @media only screen and (max-width: 600px){
-    #header{
+    /* #header{
         background-image: url(./images/background.jpg);
+    } */
+    .logo{
+        width: 180px;
+        padding-top: 7px;
+    }
+    .photo{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        left: -0px;
+        top: -200px;
     }
     .header-text{
         margin-top: 100%;
@@ -334,12 +360,17 @@ nav .fa-solid{
     .header-text h1{
         font-size: 30px;
     }
+    .text{
+        margin-top: 100px;
+        position: absolute;
+        top: 430px;
+    }
     nav .fa-solid{
         display: block;
         font-size: 25px;
     }
     nav ul{
-        background: #ff004f;
+        background: #b54769;
         position: fixed;
         top: 0;
         right: -200px;
@@ -391,3 +422,4 @@ nav .fa-solid{
     margin-top: -20px;
     display: block;
 }
+
